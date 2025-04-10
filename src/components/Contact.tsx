@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { MapPin, Clock, Phone, MessageSquare, Instagram, TikTok } from 'lucide-react';
+import { MapPin, Clock, Phone, MessageSquare, Instagram, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -85,7 +85,7 @@ const Contact = () => {
                     <Instagram size={24} />
                   </a>
                   <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-boutique-black transition-colors">
-                    <TikTok size={24} />
+                    <ExternalLink size={24} />
                   </a>
                 </div>
               </div>
