@@ -11,6 +11,7 @@ const Contact = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           sectionRef.current?.classList.add('animate-fade-in');
+          sectionRef.current?.classList.remove('opacity-0');
         }
       },
       { threshold: 0.1 }
@@ -20,10 +21,18 @@ const Contact = () => {
       observer.observe(sectionRef.current);
     }
     
+    // Ensure section is visible even if intersection observer fails
+    const timeout = setTimeout(() => {
+      if (sectionRef.current?.classList.contains('opacity-0')) {
+        sectionRef.current.classList.remove('opacity-0');
+      }
+    }, 1000);
+    
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
+      clearTimeout(timeout);
     };
   }, []);
   
@@ -36,7 +45,7 @@ const Contact = () => {
     <section 
       id="contact" 
       ref={sectionRef}
-      className="py-20 bg-boutique-blush opacity-0"
+      className="py-20 bg-boutique-blush opacity-0 will-change-opacity"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
