@@ -1,5 +1,5 @@
 
-import { Instagram, TikTok } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,8 +22,8 @@ const Footer = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <TikTok size={20} />
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+                <Youtube size={20} />
               </a>
             </div>
             <p className="text-sm text-gray-400">
