@@ -41,14 +41,14 @@ const Collection = () => {
   const products: Product[] = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1520048480367-7a6mindcbdd4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Linen Blend Midi Dress",
       price: "$189",
       category: "Dresses"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1618522168389-8065f3996308?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Oversized Wool Blazer",
       price: "$245",
       category: "Outerwear"
