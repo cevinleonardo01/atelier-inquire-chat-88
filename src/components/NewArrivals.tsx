@@ -35,7 +35,7 @@ const NewArrivals = () => {
     <section 
       id="new-arrivals" 
       ref={sectionRef}
-      className="py-20 bg-white opacity-0"
+      className="py-20 bg-white will-change-opacity"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

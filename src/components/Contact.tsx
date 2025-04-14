@@ -36,7 +36,7 @@ const Contact = () => {
     <section 
       id="contact" 
       ref={sectionRef}
-      className="py-20 bg-boutique-blush opacity-0"
+      className="py-20 bg-boutique-blush will-change-opacity"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
