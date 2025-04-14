@@ -42,7 +42,7 @@ const Collection = () => {
     {
       id: 1,
       image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      name: "Linen Blend Midi Dress",
+      name: "Tes",
       price: "$189",
       category: "Dresses"
     },
