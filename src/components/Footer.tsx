@@ -1,5 +1,5 @@
 
-import { Instagram, ExternalLink } from 'lucide-react';
+import { Instagram, TikTok } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,7 +23,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <ExternalLink size={20} />
+                <TikTok size={20} />
               </a>
             </div>
             <p className="text-sm text-gray-400">

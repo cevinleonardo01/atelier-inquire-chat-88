@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { MapPin, Clock, Phone, MessageSquare, Instagram, ExternalLink } from 'lucide-react';
+import { MapPin, Clock, Phone, MessageSquare, Instagram, TikTok } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -11,7 +11,6 @@ const Contact = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           sectionRef.current?.classList.add('animate-fade-in');
-          sectionRef.current?.classList.remove('opacity-0');
         }
       },
       { threshold: 0.1 }
@@ -21,18 +20,10 @@ const Contact = () => {
       observer.observe(sectionRef.current);
     }
     
-    // Ensure section is visible even if intersection observer fails
-    const timeout = setTimeout(() => {
-      if (sectionRef.current?.classList.contains('opacity-0')) {
-        sectionRef.current.classList.remove('opacity-0');
-      }
-    }, 1000);
-    
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
-      clearTimeout(timeout);
     };
   }, []);
   
@@ -45,7 +36,7 @@ const Contact = () => {
     <section 
       id="contact" 
       ref={sectionRef}
-      className="py-20 bg-boutique-blush opacity-0 will-change-opacity"
+      className="py-20 bg-boutique-blush opacity-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -94,7 +85,7 @@ const Contact = () => {
                     <Instagram size={24} />
                   </a>
                   <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-boutique-black transition-colors">
-                    <ExternalLink size={24} />
+                    <TikTok size={24} />
                   </a>
                 </div>
               </div>

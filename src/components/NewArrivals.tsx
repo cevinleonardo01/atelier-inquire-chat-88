@@ -10,7 +10,6 @@ const NewArrivals = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           sectionRef.current?.classList.add('animate-fade-in');
-          sectionRef.current?.classList.remove('opacity-0');
         }
       },
       { threshold: 0.1 }
@@ -36,7 +35,7 @@ const NewArrivals = () => {
     <section 
       id="new-arrivals" 
       ref={sectionRef}
-      className="py-20 bg-white opacity-0 will-change-opacity"
+      className="py-20 bg-white opacity-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

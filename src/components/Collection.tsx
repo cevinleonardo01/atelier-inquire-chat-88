@@ -18,7 +18,6 @@ const Collection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           sectionRef.current?.classList.add('animate-fade-in');
-          sectionRef.current?.classList.remove('opacity-0');
         }
       },
       { threshold: 0.1 }
@@ -41,42 +40,42 @@ const Collection = () => {
   const products: Product[] = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      name: "Tes",
+      image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      name: "Linen Blend Midi Dress",
       price: "$189",
       category: "Dresses"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Oversized Wool Blazer",
       price: "$245",
       category: "Outerwear"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Silk Camisole",
       price: "$120",
       category: "Tops"
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Wide-Leg Cotton Trousers",
       price: "$165",
       category: "Bottoms"
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Cashmere Knit Cardigan",
       price: "$220",
       category: "Knitwear"
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1556015048-4d3aa10df74c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       name: "Leather Crossbody Bag",
       price: "$195",
       category: "Accessories"
@@ -87,7 +86,7 @@ const Collection = () => {
     <section 
       id="collection" 
       ref={sectionRef}
-      className="py-20 bg-boutique-beige opacity-0 will-change-opacity"
+      className="py-20 bg-boutique-beige opacity-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
