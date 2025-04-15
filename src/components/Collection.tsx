@@ -86,7 +86,7 @@ const Collection = () => {
     <section 
       id="collection" 
       ref={sectionRef}
-      className="py-20 bg-boutique-beige will-change-opacity"
+      className="py-20 bg-boutique-beige"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
