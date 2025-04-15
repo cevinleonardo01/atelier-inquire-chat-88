@@ -10,29 +10,29 @@ interface Product {
   category: string;
 }
 
-// const Collection = () => {
-//   const sectionRef = useRef<HTMLElement>(null);
+const Collection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
   
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         if (entry.isIntersecting) {
-//           sectionRef.current?.classList.add('animate-fade-in');
-//         }
-//       },
-//       { threshold: 0.1 }
-//     );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          sectionRef.current?.classList.add('animate-fade-in');
+        }
+      },
+      { threshold: 0.1 }
+    );
     
-//     if (sectionRef.current) {
-//       observer.observe(sectionRef.current);
-//     }
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
     
-//     return () => {
-//       if (sectionRef.current) {
-//         observer.unobserve(sectionRef.current);
-//       }
-//     };
-//   }, []);
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   
   // WhatsApp link - replace with your number
   const whatsappLink = "https://wa.me/1234567890";
