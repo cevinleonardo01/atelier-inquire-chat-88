@@ -28,7 +28,7 @@ const ProductCard = ({ image, name, price, category, whatsappLink }: ProductCard
           alt={name} 
           className="w-full h-[400px] object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
         />
-        <div className={`absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-1'}`}>
+        <div className={`absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <a 
             href={fullWhatsappLink} 
             target="_blank" 
